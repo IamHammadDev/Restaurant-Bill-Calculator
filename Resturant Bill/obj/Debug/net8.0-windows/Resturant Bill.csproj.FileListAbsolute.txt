@@ -1,0 +1,16 @@
+C:\Users\HP\source\repos\Resturant Bill\Resturant Bill\obj\Debug\net8.0-windows\Resturant_Bill.Form1.resources
+C:\Users\HP\source\repos\Resturant Bill\Resturant Bill\obj\Debug\net8.0-windows\Resturant Bill.csproj.GenerateResource.cache
+C:\Users\HP\source\repos\Resturant Bill\Resturant Bill\obj\Debug\net8.0-windows\Resturant Bill.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\HP\source\repos\Resturant Bill\Resturant Bill\obj\Debug\net8.0-windows\Resturant Bill.AssemblyInfoInputs.cache
+C:\Users\HP\source\repos\Resturant Bill\Resturant Bill\obj\Debug\net8.0-windows\Resturant Bill.AssemblyInfo.cs
+C:\Users\HP\source\repos\Resturant Bill\Resturant Bill\obj\Debug\net8.0-windows\Resturant Bill.csproj.CoreCompileInputs.cache
+C:\Users\HP\source\repos\Resturant Bill\Resturant Bill\bin\Debug\net8.0-windows\Resturant Bill.exe
+C:\Users\HP\source\repos\Resturant Bill\Resturant Bill\bin\Debug\net8.0-windows\Resturant Bill.deps.json
+C:\Users\HP\source\repos\Resturant Bill\Resturant Bill\bin\Debug\net8.0-windows\Resturant Bill.runtimeconfig.json
+C:\Users\HP\source\repos\Resturant Bill\Resturant Bill\bin\Debug\net8.0-windows\Resturant Bill.dll
+C:\Users\HP\source\repos\Resturant Bill\Resturant Bill\bin\Debug\net8.0-windows\Resturant Bill.pdb
+C:\Users\HP\source\repos\Resturant Bill\Resturant Bill\obj\Debug\net8.0-windows\Resturant Bill.dll
+C:\Users\HP\source\repos\Resturant Bill\Resturant Bill\obj\Debug\net8.0-windows\refint\Resturant Bill.dll
+C:\Users\HP\source\repos\Resturant Bill\Resturant Bill\obj\Debug\net8.0-windows\Resturant Bill.pdb
+C:\Users\HP\source\repos\Resturant Bill\Resturant Bill\obj\Debug\net8.0-windows\Resturant Bill.genruntimeconfig.cache
+C:\Users\HP\source\repos\Resturant Bill\Resturant Bill\obj\Debug\net8.0-windows\ref\Resturant Bill.dll
