@@ -26,69 +26,52 @@ namespace Resturant_Bill
             dt.Columns.Add("Category", typeof(string));
             dt.Columns.Add("Price", typeof(double));
         }
+        private void AddItemToDataGridView(string itemName, string category, double price)
+        {
+            // Add item and price to DataTable
+            dt.Rows.Add(itemName, category, price);
+
+            // Display DataTable in DataGridView
+            dataGridView1.DataSource = dt;
+        }
+
+        private void CalculateBill(double price)
+        {
+            SubTotal += price;
+            textBox1.Text = SubTotal.ToString("N2");
+            Tax = 0.75 * SubTotal;
+            textBox2.Text = Tax.ToString("N2");
+            Total = SubTotal + Tax;
+            textBox3.Text = Total.ToString("N2");
+        }
         private void AppetizerscomboBox_SelectedIndexChanged(object sender, EventArgs e)
         {
             var Price = getPrice(AppetizerscomboBox.SelectedIndex, "Appetizers");
             items.Add(AppetizerscomboBox.Text + "\t" + Price.ToString());
-            // Add item and price to DataTable
-            dt.Rows.Add(AppetizerscomboBox.Text, "Appetizers ", Price);
-
-            // Display DataTable in DataGridView
-            dataGridView1.DataSource = dt;
-            SubTotal += Price;
-            textBox1.Text = SubTotal.ToString("N2");
-            Tax = .75 * SubTotal;
-            textBox2.Text = Tax.ToString("N2");
-            Total = SubTotal + Tax;
-            textBox3.Text = Total.ToString("N2");
+            AddItemToDataGridView(AppetizerscomboBox.Text, "Appetizers", Price);
+            CalculateBill(Price);
         }
         private void BeveragescomboBox_SelectedIndexChanged(object sender, EventArgs e)
         {
             var Price = getPrice(BeveragescomboBox.SelectedIndex, "Beverages");
             items.Add(BeveragescomboBox.Text + "\t" + Price.ToString());
-            // Add item and price to DataTable
-            dt.Rows.Add(BeveragescomboBox.Text, "Beverages ", Price);
-
-            // Display DataTable in DataGridView
-            dataGridView1.DataSource = dt;
-            SubTotal += Price;
-            textBox1.Text = SubTotal.ToString("N2");
-            Tax = .75 * SubTotal;
-            textBox2.Text = Tax.ToString("N2");
-            Total = SubTotal + Tax;
-            textBox3.Text = Total.ToString("N2");
+            AddItemToDataGridView(BeveragescomboBox.Text, "Beverages", Price);
+            CalculateBill(Price);
         }
         private void DessertdcomboBox_SelectedIndexChanged(object sender, EventArgs e)
         {
             var Price = getPrice(DessertdcomboBox.SelectedIndex, "Desserts");
             items.Add(DessertdcomboBox.Text + "\t" + Price.ToString());
-            // Add item and price to DataTable
-            dt.Rows.Add(DessertdcomboBox.Text, "Desserts ", Price);
+            AddItemToDataGridView(DessertdcomboBox.Text, "Desserts", Price);
+            CalculateBill(Price);
 
-            // Display DataTable in DataGridView
-            dataGridView1.DataSource = dt;
-            SubTotal += Price;
-            textBox1.Text = SubTotal.ToString("N2");
-            Tax = .75 * SubTotal;
-            textBox2.Text = Tax.ToString("N2");
-            Total = SubTotal + Tax;
-            textBox3.Text = Total.ToString("N2");
         }
         private void MaincoursecomboBox_SelectedIndexChanged(object sender, EventArgs e)
         {
             var Price = getPrice(MaincoursecomboBox.SelectedIndex, "Main Courses");
             items.Add(MaincoursecomboBox.Text + "\t" + Price.ToString());
-            // Add item and price to DataTable
-            dt.Rows.Add(MaincoursecomboBox.Text, "Main Courses ", Price);
-
-            // Display DataTable in DataGridView
-            dataGridView1.DataSource = dt;
-            SubTotal += Price;
-            textBox1.Text = SubTotal.ToString("N2");
-            Tax = .75 * SubTotal;
-            textBox2.Text = Tax.ToString("N2");
-            Total = SubTotal + Tax;
-            textBox3.Text = Total.ToString("N2");
+           AddItemToDataGridView(MaincoursecomboBox.Text, "Main Courses", Price);
+            CalculateBill(Price);
         }
         public double getPrice(int indexNum, string itemType)
         {
